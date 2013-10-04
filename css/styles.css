@@ -8,22 +8,39 @@ For: CSS Selectors
 
 h2 {
 	color:#ffffff;
-	outline:#000000 solid 1px;
 	background:#003b6f;
 	margin:0px;
 	border:0px;
+	padding-left:2px;
 }
 
 h4 {
 	background:#599653;
 	border:0px;
 	margin:0px;
+	padding-left:2px;
+}
+
+/* modified h4 tag to set browse section apart*/
+.forBrowse {
+	color:#ffffff;
+	background:#3b3b3b;
+	margin:0px;
+	padding:0px;
 }
 
 img {
 	border:0px;
 	margin:0px;
 }
+
+/* sets the search section apart*/
+#search {
+	background:#c70000;
+	color:#ffffff;
+	padding-left:2px;
+}
+
 /* takes away the dots from list elements */
 .nodot {
 	list-style-type:none;
@@ -32,7 +49,7 @@ img {
 
 /* adds an outline to the list elements with class nodot and makes space between */
 ul.nodot > li {
-	outline:#000000 solid 1px;
-	margin:5px;
-	background:;
+	margin-bottom:5px;
+	background:#8c8c8c;
+	color:#000000;
 }
