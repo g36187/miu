@@ -24,3 +24,15 @@ img {
 	border:0px;
 	margin:0px;
 }
+/* takes away the dots from list elements */
+.nodot {
+	list-style-type:none;
+	padding:0px;
+}
+
+/* adds an outline to the list elements with class nodot and makes space between */
+ul.nodot > li {
+	outline:#000000 solid 1px;
+	margin:5px;
+	background:;
+}
