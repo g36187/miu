@@ -55,3 +55,22 @@ ul.nodot > li {
 	border-radius:25px;
 	
 }
+
+/* make navbar horizontal with hovers*/
+#navbar ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#8c8c8c;
+}
+#navbar ul li {
+	display:inline;
+}
+#navbar ul li a {
+	color:#ffffff;
+	text-decoration:none;
+	padding: 2px;
+}
+#navbar ul li a:hover {
+	background-color: #036000;
+}
