@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+	<!-- MiU Project 1 | Ruben Quizon | Term 1310 -->
+	<!-- This is a simple application which will allow the 
+		 user to choose what they would pack in a bag to 
+		 prepare for a world crysis event -->	
+	
+	<!-- Character Set Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="robots" value="index, follow"/>
+	<meta name="keywords" content="HTML,CSS,Bug-out"/>
+	<meta name="description" content="Bug-out bag Application"/>
+	<link rel="stylesheet" href="css/styles.css" />
+	<!-- Page Title -->
+	<title>Bug-out Bag Packing List</title>
+</head>
+<body>
+	<!-- Page content lives here. -->
+	<h2>Bug-out Bag Packing List</h2>
+	<h4>Are you prepared for the apocalypse?</h4>
+	<a href="additem.html">
+		<img src="images/zombie_cta.png" width=304px height=160px></img>
+	</a>
+	<hr>
+	<div id="search">
+		<form id="searchForm" method="get">
+			Search your bag's contents here:
+			<input type="text" name="checkGear"> 
+			<input type="submit" value="Search">
+		</form>
+	</div>
+	<hr>
+	<div id="browse">
+		<h4 class="forBrowse">Browse Item Categories</h4>
+		<!-- add links to future functions in main.js to display results -->
+		<ul class="nodot">
+			<li>&nbsp&nbsp&nbsp<img src="images/Weapon.png"/><a href="#" id="dispWeap">Weapon</a></li>
+			<li>&nbsp&nbsp&nbsp<img src="images/Armor.png"/><a href="#" id="dispArmo">Armor</a></li>
+			<li>&nbsp&nbsp&nbsp<img src="images/Vehicle.png"/><a href="#" id="dispVehi">Vehicle</a></li>
+			<li>&nbsp&nbsp&nbsp<img src="images/Food.png"/><a href="#" id="dispFood">Food</a></li>
+			<li>&nbsp&nbsp&nbsp<img src="images/Drink.png"/><a href="#" id="dispDrin">Drink</a></li>
+			<li>&nbsp&nbsp&nbsp<img src="images/Tool.png"/><a href="#" id="dispTool">Tools</a></li>
+		</ul>
+	</div>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
