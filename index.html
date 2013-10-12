@@ -1,28 +1,63 @@
-<!doctype html>
-<html>
+<!doctype html>  
+
+<html lang="en">
 
 	<head>
 		<!-- MiU Project 2 | Ruben Quizon | Term 1310 -->
 		<!-- This is a simple application which will allow the 
 			 user to choose what they would pack in a bag to 
-		 	prepare for a world crysis event -->	
-	
-		<!-- Character Set Meta -->
+		 	 prepare for a world crysis event -->
+
 		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="robots" value="index, follow"/>
 		<meta name="keywords" content="HTML,CSS,Bug-out"/>
-		<meta name="description" content="Choose between two apps"/>
-		<link rel="stylesheet" href="css/styles.css" />
-		<!-- Page Title -->
-		<title>App Chooser</title>
+		<meta name="description" content="Bug-out bag Application"/>
+
+		<!--  Mobile viewport optimized: j.mp/bplateviewport updated to 3.5 retina rez-->
+		<meta name="HandheldFriendly" content="True"/>
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+
+		<title>Bug-out Bag Packing List</title>
+
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+		<link rel="stylesheet" href="css/style.css"/>
+	
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which 
+			 enables HTML5 elements & feature detects .. kept this for added features-->
+		<script src="js/libs/modernizr.custom.min.js"></script>
 	</head>
 
 	<body>
-		Click the App you'd like to view :
-		<br>
-		<a href="gold app/index.html">Gold App</a>
-		<a href="bronze app/index.html">Bronze App</a>
+		<div data-role="page">
+			<div data-role="content">
+				<ul data-role="listview">
+					<li data-role="list-divider">MiU 1310 - Ruben Quizon</li>
+					<li data-role="list-divider">Please choose:</li>
+					<li>
+						<a href="gold/index.html" target="_blank">
+							<h3>Gold App</h3>
+							<p>This is the one I like</p>
+						</a>
+					</li>
+					<li>
+						<a href="bronze/index.html" target="_blank">
+							<h3>Bronze App</h3>
+							<p>Still good...just not as good.</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
 	</body>
 
 </html>
