@@ -291,7 +291,8 @@
 				<form action="" method="post" id="addtobag">
 					<div data-role="fieldcontain">
 						<label for="droplist">Item type: </label>
-						<select name="droplist" id="droplist">
+						<select name="droplist" id="droplist" data-native-menu="false">
+							<option data-placeholder="true">Select an option</option>
 							<option value="weapon">Weapon</option>
 							<option value="armor">Armor</option>
 							<option value="vehicle">Vehicle</option>
@@ -306,7 +307,7 @@
 					</div>
 					<div data-role="fieldcontain">
 						<label for="howmany">How many: </label>
-						<input type="range" name="howmany" id="howmany" value="0" min="0" max="5"/>
+						<input type="range" name="howmany" id="howmany" value="1" min="0" max="5"/>
 					</div>
 					<div data-role="fieldcontain">
 						<label for="handy">Can be carried by hand: </label>
@@ -317,7 +318,7 @@
 					</div>
 					<div data-role="fieldcontain">
 						<label for="notes">Notes: </label>
-						<textarea></textarea>
+						<textarea>Put your field notes here</textarea>
 					</div>
 	
 					<div data-role="fieldcontain">
@@ -342,6 +343,7 @@
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
