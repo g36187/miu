@@ -6,4 +6,15 @@ For: CSS Selectors
 
 */
 
-label.error{display:block; color:#ff0000;}
+/* make error messages red */
+label.error{
+	display:block; 
+	color:#ff0000;
+}
+
+.subliminal {
+	margin:5px 3px;
+	text-align:left;
+	font-size:12px;
+	color:#8f8fbd;
+}

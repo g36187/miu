@@ -1,11 +1,13 @@
+// this validates the form to make sure it's filled out correctly
 $('#home').on('pageinit', function(){
 	var addform = $('#addtobag');
 	addform.validate();
 });	
 		
-$('#addItem').on('pageinit', function(){
+// this saves data to local storage from the form
+$('#additem').on('pageinit', function(){
 
-		var myForm = $('#formId');
+		var myForm = $('#addtobag');
 		    myForm.validate({
 			invalidHandler: function(form, validator) {
 			},
